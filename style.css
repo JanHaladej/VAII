@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+/* ^^ zaklad ^^ */
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px;
+    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+}
+
+.nav--logo {
+    max-width: 50px;
+}
+
+.nav--items{
+    list-style: none;
+    display: flex;
+}
+
+.nav--items > li{
+    padding: 10px;
+}
+
+.nav--spacing{
+    display: flex;
+    align-items: center;
+}
+
+/* ^^ navbar ^^ */
+
+main {
+    padding: 57px 27px;
+    background-image: url(./images/backgroundLogo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--list > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+/* ^^ main ^^ */
