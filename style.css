@@ -1,49 +1,49 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
+*{
     margin: 0;
-    background-color: lightgrey;
+    padding: 0;
 }
 
-/* ^^ zaklad ^^ */
+.logo{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    align-items: center;
+}
 
-nav {
-    height: 60px;
+.full--navbar{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: grey;
-    padding: 10px;
-    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.5);
-    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 5);
+    height: 30px;
 }
 
-.nav--logo {
-    max-width: 50px;
+.nav--logo{
+    max-width: 70px;
 }
 
-.nav--items{
+.ul{
+    display: flex;
+}
+
+.ul > li{
     list-style: none;
-    display: flex;
+    padding: 5px;
 }
 
-.nav--items > li{
-    padding: 10px;
-}
+/* ^^^ Navbar ^^^ */
 
-.nav--spacing{
-    display: flex;
-    align-items: center;
-}
-
-/* ^^ navbar ^^ */
-
-main {
-    padding: 57px 27px;
+body {
+    background-color: lightgrey;
     background-image: url(./images/backgroundLogo.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
+}
+
+main {
+    padding: 50px 50px;
 }
 
 .main--title {
@@ -62,3 +62,52 @@ main {
     padding-block: 10px;
 }
 /* ^^ main ^^ */
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-card {
+    margin-top: 50px;
+    flex-basis: 250px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+}
+
+.contact-card > img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+.contact-card > h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+}
+
+.info-group > img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.info-group > p {
+    margin-block: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+/* ^^^ str2 karticky ^^^ */
+
